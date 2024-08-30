@@ -77,7 +77,7 @@ func (c *Client) NewDashboard(dashboard Dashboard) (*DashboardSaveResponse, erro
 
 // Dashboards fetches and returns all dashboards.
 func (c *Client) Dashboards() ([]FolderDashboardSearchResponse, error) {
-	const limit = 1000
+	const limit = 5000
 
 	var (
 		page          = 0
